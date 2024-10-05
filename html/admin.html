@@ -7,22 +7,58 @@
     <link rel="stylesheet" href="../css/estilologin.css">
 </head>
 <body>
-     
-     <header>
-        Bienvenido/a a mi pagina.
+
+    <header>
+        <h1 id="nombreUsuario">Administrador</h1> 
+        <nav >
+            <ul>
+                <li><a class="boton" href="../index.html">Regresar</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav >
-        <ul>
-            <a class="boton" href="../index.html">Regresar</a>
-        </ul>
-    </nav>
-  
+
     <main>
-        Hola admin
+        <p>Hola admin</p>
+        <br>
+
+        <div class="panelAdmin">
+            <div class="registro">
+                <h1>Registro de Usuarios</h1>
+                <form id="registrationForm">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="age">Edad:</label>
+                    <input type="number" id="age" name="age" required><br>
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+
+            <div class="tabla">
+                <h2>Usuarios Registrados</h2>
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los registros se cargarán aquí -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
+
     <footer>
         <p>Contacto: jcarloscaicedo@unibarranquilla.edu.co</p>
-        <p>Numero: ********* </p>
     </footer>
+    <script src="../js/admin.js"></script>
 </body>
 </html>

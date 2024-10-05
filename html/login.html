@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesion</title>
+    <title>Inicio de sesión</title>
     <link rel="stylesheet" href="../css/estilologin.css">
-    
 </head>
+
 <body>
     <header>
-        Bienvenido/a inicie su sesion.
+        Bienvenido/a, inicie su sesión.
     </header>
-    <nav >
+    <nav>
         <ul>
             <a class="boton" href="../Index.html">Regresar</a>
         </ul>
     </nav>
-  
+
     <main>
-        Ingrese su informacion.
+        Ingrese su información.
     </main>
     <div class="div1">
         <section>
             <form onsubmit="return false">
-                <h1>Inisia sesion</h1>
+                <h1>Inicia sesión</h1>
                 <div>
                     <input type="text" class="boton2" id="usuario" placeholder="Usuario" title="Ingrese su usuario">
                 </div>
-                
                 <div>
-                    <input type="password" class="boton2" id="contraseña" placeholder="contraseña" title="Ingrese su contraseña">
+                    <input type="password" class="boton2" id="contraseña" placeholder="Contraseña"
+                        title="Ingrese su contraseña">
                     <input type="checkbox" title="Mostrar la contraseña"
-                    onclick="document.getElementById('contraseña'). type = this.checked ? 'text': 'password'">
-                    <label for="contraseña"></label>
+                        onclick="document.getElementById('contraseña').type = this.checked ? 'text' : 'password'">
+                    <label for="contraseña">Mostrar contraseña</label>
                 </div>
                 <br>
                 <div>
                     <button class="boton2" id="ingresa" type="button">Ingresar</button>
                 </div>
             </form>
-            </section>
+        </section>
     </div>
     <footer>
         <p>Contacto: jcarloscaicedo@unibarranquilla.edu.co</p>
-        <p>Numero: ******** </p>
-
     </footer>
     <script src="../js/login.js"></script>
 </body>
+
 </html>
